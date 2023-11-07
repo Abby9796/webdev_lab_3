@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            background-image: url(./images/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .wrapper {
+            display:flex;
+            flex-direction: column;
+            min-height: 400px;
+            background-color: transparent;
+            width: 80%;
+            margin: auto;  
+        }
+
+        .banner{
+
+            display:flex;
+            flex-direction: column;
+            min-height:50px;
+            background-color: whitesmoke;
+            justify-items: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            color: white;
+            
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+        }
+
+        .navigation{
+
+            display:flex;
+            flex-direction: row;
+            min-height: 20px;
+            background-color: goldenrod;
+            justify-items: center;
+            align-items: center;
+            margin-top: 10px;
+            justify-content: space-between;
+
+        }
+
+        .main {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+
+            display:flex;
+            flex-direction: column;
+            background-color: lightgoldenrodyellow;
+            flex-basis: 20%;
+            /* min-height: 10px; */
+            margin-top: 10px;
+
+        }
+
+        .body {
+
+            display:flex;
+            flex-direction: row;
+            background-color: lightgoldenrodyellow;
+            flex-basis: 75%;
+            margin-top: 10px;
+
+        }
+
+        .footer {
+
+            display:flex;
+            flex-direction: column;
+            background-color: goldenrod;
+            margin-top: 10px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .body > p {
+            order: 1;
+            flex-grow: 1;
+            margin-right: 70px; 
+        }
+
+        .body > img {
+            order: 2;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <img src="./images/header2.jpg" alt="">
+            <div class="centered">Abby's Blog</div>
+        </div>
+        <div class="navigation">
+            <a href="file:///C:/Users/ASUS/Desktop/UTHM/SEM%205/WEBDEV/webdev_lab_3/campus.html">Campus Life</a>
+            <a href="file:///C:/Users/ASUS/Desktop/UTHM/SEM%205/WEBDEV/webdev_lab_2/biodata.html">About Me</a>
+            <a href="file:///C:/Users/ASUS/Desktop/UTHM/SEM%205/WEBDEV/webdev_lab_3/contact.html">Contact</a>
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                I'm so introverted that if there was a party for introverts, I'd probably send my extroverted friend to represent me. My idea of a crowded room is a library with an extra person in it. If silence were a sport, I'd be an Olympic gold medalist.
+            </div>
+            <div class="body">
+                <p>Living as a student at UTHM pursuing a degree in Computer Science (Software Engineering) is a dynamic journey that intertwines technology, creativity, and personal passions. Amidst code and algorithms, my love for literature shines through my fondness for authors like Jane Austen, Tere Liye, and Christina Lauren. Exploring the worlds they craft becomes a delightful escape. Music acts as a constant companion, with LANY and Sarah Kang providing the soundtrack to my academic odyssey. Amidst lectures and programming challenges, my passion for the written word offers a haven. Engrossed in those classics, evocative tales, and compelling narratives, my dorm transforms into a sanctuary of literary treasures. The melodic tunes echo through the corridors, weaving a symphony that harmonizes with my pursuit of knowledge, I craft a unique narrative—a student both immersed in the digital realm and captivated by the artistry of words and music.</p>
+                <img src="./images/books.jpg" alt="">
+            </div>
+        </div>
+        <div class="footer">
+            &copy Abby Dandu ak Syl. Beliang
+        </div>
+    </div>
+</body>
+</html>
